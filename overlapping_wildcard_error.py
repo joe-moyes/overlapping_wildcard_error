@@ -144,7 +144,7 @@ class FormWithRadioitemsAndDropdown(dbc.Form):
         value of radioitem2dropdownvalues_dict where key equals 'All'.
         
         radioitem2dropdownvalues_dict is a dictionary that specifies which radioitem option 
-        corresponds to which dropdown options, which is stored in the store component. 
+        corresponds to which dropdown options, which is stored in the separate store component. 
         
         - A_or_B: string, denotes whether the instance belongs to the filter menu of Audience 
             A or Audience B.
@@ -333,14 +333,6 @@ class FormWithRadioitemsAndRangeslider(dbc.Form):
             'A_or_B' : A_or_B,            
             'variable': variable
             }
-        
-        # store for radioitem2rangeslidervalues_dict
-        store = lambda A_or_B, variable: {
-            'component': 'FormWithRadioitemsAndRangeslider',
-            'subcomponent': 'store',
-            'A_or_B' : A_or_B,            
-            'variable': variable
-            }
 
     ids = ids
         
@@ -359,7 +351,7 @@ class FormWithRadioitemsAndRangeslider(dbc.Form):
         key:value pair in radioitem2rangeslidervalues_dict where key equals 'All'.
         
         radioitem2rangeslidervalues_dict is a dictionary that specifies which radioitem option 
-        corresponds to a rangeslider value, which is stored in the store component. 
+        corresponds to a rangeslider value, which is stored in the separate store component. 
         
         - A_or_B: string, denotes whether the instance belongs to the filter menu of Audience 
         A or Audience B.
@@ -367,8 +359,6 @@ class FormWithRadioitemsAndRangeslider(dbc.Form):
         the combination of A_or_B and variable must be unique to a given instance.       
         - radioitem2rangeslidervalues_dict: dictionary of {radioitem value: [x1,x2],
                                                            ...}
-        - rangeslider_kwargs: dict, assigns values (dict values) to rangeslider properties
-        (dict keys). This should include values for min and max.
         """
                 
         className = "text-primary" if A_or_B == "A" else "text-secondary"
@@ -587,8 +577,7 @@ def card_filtermenu(A_or_B):
                                 style = {
                                     "display" : "inline" if not audience_A else "none",
                                     'position' : 'relative',
-                                    "top" : "11px",
-                                    "right" : "15rem"
+                                    "top" : "11px"
                                     }
                                 )
                             )
