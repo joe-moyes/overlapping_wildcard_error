@@ -4,7 +4,7 @@
  I would like to suppress this error to allow duplicated output across multiple pattern-matching callbacks.
  Unfortunately, neither suppress_callback_exceptions=True or allow_duplicate=True (in conjunction with prevent_initial_call=True) is suppressing this error.
  
- To explain the demo app:<\br>
+ To explain the demo app:
  I want this app to have 2 copies of a filter menu, one for "Audience A" and another for "Audience B".  
  The filter menu consists of dropdowns and rangesliders, and each is linked to a markdown that updates and shows the selected dropdown / rangeslider value.
  The filter menu for "Audience B" additionally includes a checkbox named "Not Audience A".
