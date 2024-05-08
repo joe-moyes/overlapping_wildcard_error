@@ -12,6 +12,6 @@
  
  Code structure:
  The class FormWithRadioitemsAndDropdown() has a pattern-matching callback that updates the markdown associated (by pattern-matching id) with an instance, likewise for the class FormWithRadioitemsAndRangeslider().
- I would like a new pattern-matching callback that updates the markdown for ALL instances of FormWithRadioitemsAndDropdown() and FormWithRadioitemsAndRangeslider() that belong to the "Audience B" filter menu when the "Not Audience A" checkbox is checked.
+ I would like a new pattern-matching callback that updates the markdown associated with ALL instances of FormWithRadioitemsAndDropdown() and FormWithRadioitemsAndRangeslider() that belong to the "Audience B" filter menu when the "Not Audience A" checkbox is checked.
  
  Despite allow_duplicate=True, Dash 2.17.0 seemingly does not tolerate duplicated output across multiple callbacks if pattern matching is used.
