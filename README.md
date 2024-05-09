@@ -8,7 +8,7 @@
  I want this app to have 2 copies of a filter menu, one for "Audience A" and another for "Audience B".  
  The filter menu consists of dropdowns and rangesliders, each of which is linked to a markdown that is updated to show the selected dropdown / rangeslider value.
  The filter menu for "Audience B" additionally includes a checkbox named "Not Audience A".
- When checked, all markdown in the filter menu for "Audience B" should be updated to show the [inverse of the] value of the corresponding dropdown / rangeslider in Audience A.
+ When checked, all markdown in the filter menu for "Audience B" should be updated to show the [inverse of the] value of their corresponding dropdown / rangeslider in Audience A.
  
  Code structure:
  The class FormWithRadioitemsAndDropdown() has a pattern-matching callback that updates the markdown associated (by pattern-matching id) with an instance, likewise for the class FormWithRadioitemsAndRangeslider().
