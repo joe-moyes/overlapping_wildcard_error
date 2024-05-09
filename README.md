@@ -1,6 +1,6 @@
 # overlapping wildcard callback error
  I am using Dash 2.17.0.
- The callback that causes this error is on lines 657-700, which are commented out so this demo app can first run successfully. When un-commented, this error is thrown on app launch.
+ The callback that causes this error is on lines 646-689, which are commented out so this demo app can first run successfully. When un-commented, this error is thrown on app launch.
  I would like to suppress this error to allow duplicated output across multiple pattern-matching callbacks.
  Unfortunately, neither suppress_callback_exceptions=True or allow_duplicate=True (in conjunction with prevent_initial_call=True) is suppressing this error.
  
