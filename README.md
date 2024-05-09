@@ -6,7 +6,7 @@
  
  To explain the demo app:
  I want this app to have 2 copies of a filter menu, one for "Audience A" and another for "Audience B".  
- The filter menu consists of dropdowns and rangesliders, each of which is linked to a markdown that updates and shows the selected dropdown / rangeslider value.
+ The filter menu consists of dropdowns and rangesliders, each of which is linked to a markdown that is updated to show the selected dropdown / rangeslider value.
  The filter menu for "Audience B" additionally includes a checkbox named "Not Audience A".
  When checked, each markdown in the filter menu for "Audience B" should instead reference the [inverse of the] selected dropdown / rangeslider value in Audience A.
  
